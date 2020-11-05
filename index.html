@@ -8,32 +8,35 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <div class="intro">
+    <header class="header">
       <div class="container">
-        <header class="header">
-          <a href="#" class="logo-link2"><img src="img/logo.png" alt="logo" class="logo"></a>
-          <div class="header-body">
-            <nav class="header-menu">
-              <ul class="header-list">
-                <li class="header-list__item"><a href="#" class="header-link active">HOME</a></li>
-                <li class="header-list__item"><a href="#" class="header-link">ABOUT</a></li>
-                <li class="header-list__item"><a href="#" class="header-link">MENUS</a></li>
-                <li class="header-list__item"><a href="#" class="header-link">OFFERS</a></li>
-              </ul>
-            </nav>
-            <a href="#" class="logo-link"><img src="img/logo.png" alt="logo" class="logo"></a>
-            <nav class="header-menu">
-              <ul class="header-list">
-                <li class="header-list__item"><a href="#" class="header-link ">GALLERY</a></li>
-                <li class="header-list__item"><a href="#" class="header-link">CONTACT</a></li>
-                <li class="header-list__item"><a href="#" class="header-link">BLOG</a></li>
-              </ul>
-            </nav>
-          </div>
-          <div class="header-burger">
-            <span></span>
-          </div>
-        </header>
+      <a href="#" class="logo-link2"><img src="img/logo.png" alt="logo" class="logo"></a>
+      <div class="header-body">
+        <nav class="header-menu">
+          <ul class="header-list">
+            <li class="header-list__item"><a href="#home" class="header-link active">HOME</a></li>
+            <li class="header-list__item"><a href="#about" class="header-link">ABOUT</a></li>
+            <li class="header-list__item"><a href="#menus" class="header-link">MENUS</a></li>
+            <li class="header-list__item"><a href="#offers" class="header-link">OFFERS</a></li>
+          </ul>
+        </nav>
+        <a href="#" class="logo-link"><img src="img/logo.png" alt="logo" class="logo"></a>
+        <nav class="header-menu">
+          <ul class="header-list">
+            <li class="header-list__item"><a href="#gallery" class="header-link ">GALLERY</a></li>
+            <li class="header-list__item"><a href="#contact" class="header-link">CONTACT</a></li>
+            <li class="header-list__item"><a href="#blog" class="header-link">BLOG</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header-burger">
+        <span></span>
+      </div>
+    </div>
+    </header>
+
+    <div class="intro" id="home">
+      <div class="container">
         <div class="intro-body">
           <img src="img/waffles.png" alt="Waffles-img" class="intro-img">
           <div class="intro-content">
@@ -48,7 +51,7 @@
 
     <main class="main">
       <div class="container">
-          <section class="about">
+          <section class="about" id="about">
             <img src="img/harch.png" alt="harch" class="about-img">
             <div class="about-content">
               <h2 class="about-title title">About Us</h2>
@@ -58,7 +61,7 @@
         </div>
         
       <div class="quality-position">
-        <section class="quality">
+        <section class="quality" id="blog">
           <div class="container">
             <div class="quality-content">
               <h2 class="quality-title title">Our Food Quality</h2>
@@ -71,28 +74,72 @@
         <img src="img/eggs2.png" alt="eggs" class="eggs2"> 
       </div>
       
-      <section class="gallery">
+      <section class="gallery" id="gallery">
         <div class="container">
           <h2 class="gallery-title title">Our Food Gallery</h2>
           <div class="gallery-card">
-            <div class="card card1"><span class="card-span">Food</span></div>
-            <div class="card card2"></div>
-            <div class="card card3"></div>
-            <div class="card card4"></div>
-            <div class="card card5"></div>
-            <div class="card card6"></div>
+            <div class="card card1">
+              <div class="card-content">
+                <span class="card-span">Food Lover</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur.  
+                </p>
+              </div>
+            </div>
+            <div class="card card2">
+              <div class="card-content">
+                <span class="card-span">Food Lover</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur.  
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur. 
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur. 
+                </p>
+              </div>
+            </div>
+            <div class="card card3">
+              <div class="card-content">
+                <span class="card-span">Food Lover</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur.  
+                </p>
+              </div>
+            </div>
+            <div class="card card4">
+              <div class="card-content">
+                <span class="card-span">Food Lover</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur.  
+                </p>
+              </div>
+            </div>
+            <div class="card card5">
+              <div class="card-content">
+                <span class="card-span">Food Lover</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur.  
+                </p>
+              </div>
+            </div>
+            <div class="card card6">
+              <div class="card-content">
+                <span class="card-span">Food Lover</span>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur lorem ipsum dolor sit amet consectetur.  
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="enjoy">
+      <section class="enjoy" id="offers">
         <div class="enjoy-body">
           <h2 class="enjoy-title title">Enjoy Our Food</h2>
           <p class="enjoy-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
         </div>
       </section>
 
-      <section class="menu">
+      <section class="menu" id="menus">
         <div class="container">
           <div class="menu-body">
             <div class="menu-card">
@@ -134,7 +181,7 @@
           </div>
         </div>
       </section>
-      <section class="footer">
+      <section class="footer" id="contact">
         <div class="container">
           <div class="footer-body">
             <img src="img/logo2.png" alt="logo" class="logo2">
@@ -146,11 +193,18 @@
               <li><a href="#" class="footer-link">COntact</a></li>
               <li><a href="#" class="footer-link">Location</a></li>
             </ul>
-            <div class="footer-masseg"></div>
+            <div class="footer-masseg">
+              <a href="#" class="masseg-link fab fa-facebook"></a>
+              <a href="#" class="masseg-link fab fa-instagram-square"></a>
+              <a href="#" class="masseg-link fab fa-twitter-square"></a>
+              <a href="#" class="masseg-link fab fa-youtube-square"></a>
+            </div>
           </div>
         </div>
       </section>
     </main>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/f5385a62a2.js" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
