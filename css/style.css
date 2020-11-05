@@ -185,10 +185,6 @@ body {
   left: -150px;
 }
 
-.logo-link2 {
-  display: none;
-}
-
 .intro-title {
   color: #e58f00;
   font-size: 67px;
@@ -898,12 +894,6 @@ body {
   }
   .header-burger.active span {
     display: none;
-  }
-  .logo-link2 {
-    display: block;
-    position: relative;
-    left: 0;
-    top: 30px;
   }
   .quality:before {
     width: 115%;
