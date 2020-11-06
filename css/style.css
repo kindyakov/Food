@@ -1219,10 +1219,13 @@ body {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .header-body {
     width: 100%;
   }
+}
+
+@media (max-width: 400px) {
   .intro-body {
     padding: 150px 0 100px 0;
   }
@@ -1276,6 +1279,10 @@ body {
   }
   .footer-masseg {
     margin-top: 20px;
+  }
+  .modal-window__content {
+    max-width: 100%;
+    border-radius: 0;
   }
 }
 
