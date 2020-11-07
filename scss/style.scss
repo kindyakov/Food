@@ -114,13 +114,30 @@ body {
   width: 60%;
   position: relative;
   left: -150px;
+  transform: translate(-100%, 0px);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.8s;
 }
+.intro-img.animate {
+  transform: translate(0, 0px);
+  opacity: 1;
+  visibility: visible;
+}
+
 .intro-title {
   color: #e58f00;
   font-size: 67px;
   font-weight: 400;
   text-align: left;
   max-width: 450px;
+  transform: translate(100%, 0px);
+  opacity: 0;
+  transition: 0.8s;
+}
+.intro-title.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .intro-text {
   color: #ffffff;
@@ -128,6 +145,14 @@ body {
   font-weight: 400;
   max-width: 520px;
   margin: 40px 0 0 0;
+  transform: translate(100%, 0px);
+  opacity: 0;
+  transition: 0.8s;
+}
+.intro-text.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.2s;
 }
 .intro-btn {
   font-family: "AachenBT-Roman";
@@ -136,10 +161,17 @@ body {
   background: #e58f00;
   padding: 20px 35px;
   border-radius: 5px;
+  transform: translate(300%, 0px);
+  opacity: 0;
   transition: 0.3s;
   &:hover {
     transform: scale(1.2);
   }
+}
+.intro-btn.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 .main {
   width: 100%;
@@ -157,18 +189,41 @@ body {
 }
 .about-img {
   width: 50%;
+  transform: scale(0);
+  transition: 0.8s;
+}
+.about-content {
+  overflow: hidden;
+}
+.about-img.animate {
+  transform: scale(1);
 }
 .about-content {
   width: 45%;
 }
-// .about-title {
-// }
 .title {
   color: #ffffff;
   font-size: 50px;
 }
-// .about-text {
-// }
+.about-title {
+  transform: translate(0px, 200%);
+  transition: 0.8s;
+  opacity: 0;
+}
+.about-title.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.about-text {
+  transform: translate(0px, 100%);
+  transition: 0.8s;
+  opacity: 0;
+}
+.about-text.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.2s;
+}
 .text {
   font-size: 33px;
   color: #ffffff;
@@ -177,8 +232,6 @@ body {
 // ?============================================================================================
 .quality-position {
   position: relative;
-  // overflow-x: hidden;
-  // overflow-y: hidden;
   overflow: hidden;
 }
 .quality {
@@ -195,10 +248,10 @@ body {
     background: url(../img/shape.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    // -webkit-transform: rotate(-8deg);
-    // -moz-transform: rotate(-8deg);
-    // -ms-transform: rotate(-8deg);
-    // -o-transform: rotate(-8deg);
+    -webkit-transform: rotate(-8deg);
+    -moz-transform: rotate(-8deg);
+    -ms-transform: rotate(-8deg);
+    -o-transform: rotate(-8deg);
     transform: rotate(-8deg);
   }
 }
@@ -212,16 +265,39 @@ body {
   top: 0;
   width: 700px;
   right: -70px;
+  transform: translate(-100%, 0px);
+  opacity: 0;
+  transition: 0.8s;
+}
+.waffles2.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
 }
 .eggs {
   position: absolute;
   right: -30px;
   bottom: 0;
+  transform: translate(-50%, 0px);
+  opacity: 0;
+  transition: 0.8s;
+}
+.eggs.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.2s;
 }
 .eggs2 {
   position: absolute;
   left: 150px;
   bottom: 0;
+  transform: translate(0px, -50%);
+  opacity: 0;
+  transition: 0.8s;
+}
+.eggs2.animate {
+  transform: translate(0px, 0px);
+  opacity: 1;
+  transition: all 0.8s ease 0.4s;
 }
 // ?============================================================================================
 .gallery {
@@ -423,10 +499,10 @@ body {
     color: #e58f00;
   }
 }
-.footer-masseg {
+.footer-messag {
   margin-top: 50px;
 }
-.masseg-link {
+.messag-link {
   font-size: 40px;
   margin-right: 20px;
   transform: color 0.3s;
@@ -756,8 +832,8 @@ body {
     width: 400px;
     height: 100vh;
     overflow-y: auto;
-    padding-top: 60px;
-    right: -400px;
+    padding: 60px 0 30px 0;
+    right: -100%;
     transition: 0.5s;
   }
   .header-body.active {
@@ -970,7 +1046,7 @@ body {
     width: 200px;
   }
   .eggs {
-    bottom: -50px;
+    bottom: 0;
     width: 250px;
     height: 350px;
     right: -30px;
@@ -1000,6 +1076,9 @@ body {
   }
 }
 @media (max-width: 450px) {
+  body.lock {
+    overflow: hidden;
+  }
   .header-body {
     width: 100%;
   }

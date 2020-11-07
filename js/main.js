@@ -7,6 +7,7 @@ const messagLink = document.querySelectorAll('.messag-link');
 headerBurger.addEventListener('click', function () {
   headerBody.classList.toggle('active');
   headerBurger.classList.toggle('active');
+  body.classList.toggle('lock');
 });
 headerLink.forEach(function (item) {
   item.addEventListener('click', function () {
@@ -18,6 +19,7 @@ headerLink.forEach(function (item) {
     headerLinkItem.classList.add('active');
     headerBody.classList.remove('active');
     headerBurger.classList.remove('active');
+    body.classList.remove('lock');
   });
 });
 
