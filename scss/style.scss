@@ -326,32 +326,21 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 50px 0;
+  // padding: 50px 0;
   min-height: 480px;
-  &:before {
-    content: "";
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: -100%;
-    background-color: #b16e01b0;
-    opacity: 0;
-    transition: 0.3s;
-  }
-  &:hover:before {
-    opacity: 1;
-    top: 0;
-  }
   &:hover .card-content {
     top: 0;
     opacity: 1;
   }
 }
 .card-content {
+  padding-top: 50px;
   text-align: center;
   color: #ffffff;
   display: flex;
+  background-color: #b16e01b0;
+  height: 100%;
+  width: 100%;
   flex-direction: column;
   align-items: center;
   opacity: 0;
@@ -359,6 +348,7 @@ body {
   position: relative;
   z-index: 1;
   top: -100%;
+  left: 0;
   .card-span {
     font-size: 40px;
   }
@@ -788,6 +778,10 @@ body {
     bottom: 200px;
     width: 400px;
   }
+  .card.card-click .card-content {
+    top: 0;
+    opacity: 1;
+  }
 }
 @media (max-width: 1000px) {
   .intro-title {
@@ -1175,7 +1169,7 @@ body {
     margin-bottom: 20px;
     display: block;
   }
-  .footer-link.animate{
+  .footer-link.animate {
     transition: all 0.8s ease -1s;
   }
   .footer-link.animate,

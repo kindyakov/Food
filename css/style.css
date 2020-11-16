@@ -473,26 +473,7 @@ body {
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding: 50px 0;
   min-height: 480px;
-}
-
-.card:before {
-  content: "";
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  top: -100%;
-  background-color: #b16e01b0;
-  opacity: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.card:hover:before {
-  opacity: 1;
-  top: 0;
 }
 
 .card:hover .card-content {
@@ -501,11 +482,15 @@ body {
 }
 
 .card-content {
+  padding-top: 50px;
   text-align: center;
   color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  background-color: #b16e01b0;
+  height: 100%;
+  width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -519,6 +504,7 @@ body {
   position: relative;
   z-index: 1;
   top: -100%;
+  left: 0;
 }
 
 .card-content .card-span {
@@ -1058,6 +1044,10 @@ body {
     left: 0;
     bottom: 200px;
     width: 400px;
+  }
+  .card.card-click .card-content {
+    top: 0;
+    opacity: 1;
   }
 }
 

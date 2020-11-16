@@ -120,3 +120,15 @@ $(document).ready(function () {
   });
 });
 // ?===================================================================================================================
+const card = document.querySelectorAll('.card');
+
+card.forEach(function (item) {
+  item.addEventListener('click', function () {
+    card.forEach(function (event) {
+      event.classList.remove('card-click');
+    });
+
+    item.classList.add('card-click');
+    console.log(item);
+  });
+});
